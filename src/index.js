@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Router from './router'
 import * as serviceWorker from './serviceWorker';
-
+import './mock'
 ReactDOM.render(
   <React.StrictMode>
     <Router />
