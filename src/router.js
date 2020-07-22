@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 import Admin from './admin'
 import App from './App';
 import Login from './views/login'
@@ -47,7 +47,7 @@ export default class Router extends React.Component {
                             </Switch>
                         </Admin>
                     }></Route>
-
+                    <Redirect to="ui/buttons" />
                 </App>
             </HashRouter>
         )
